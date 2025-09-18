@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS public.persona (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(150) UNIQUE NOT NULL,
+    creado_en TIMESTAMPTZ DEFAULT NOW()
+);
